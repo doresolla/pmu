@@ -1,16 +1,15 @@
 plugins {
     id("com.android.application")
-    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.labbd"
+    namespace = "com.example.facedetection"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.labbd"
-        minSdk = 24
-        targetSdk = 34
+        applicationId = "com.example.facedetection"
+        minSdk = 30
+        targetSdk = 30
         versionCode = 1
         versionName = "1.0"
 
@@ -34,17 +33,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
-    implementation(platform ("com.google.firebase:firebase-bom:32.5.0"))
-    implementation("com.google.firebase:firebase-auth:22.1.1")
-    implementation("com.google.firebase:firebase-firestore:24.7.0")
-    implementation("com.google.firebase:firebase-core:21.1.1")
-    implementation("com.firebaseui:firebase-ui-firestore:8.0.0")
-    implementation("com.firebaseui:firebase-ui-database:8.0.0")
-    implementation("com.firebaseui:firebase-ui-auth:8.0.0")
-    implementation("com.firebaseui:firebase-ui-storage:8.0.0")
-    implementation("com.github.lguipeng:BubbleView:1.0.1")
-    implementation("com.github.hani-momanii:SuperNova-Emoji:1.1")
+    implementation("com.google.android.gms:play-services-vision:20.1.3")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
