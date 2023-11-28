@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">speech</string>
+    <string name="intro">Press the button to speak!</string>
+    <string name="speech">Speak now</string>
+    <string name="word_intro">Suggested words</string>
+</resources>
